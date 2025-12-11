@@ -1,7 +1,0 @@
-2025/12/11-17:35:12.276 afe Reusing MANIFEST /home/sheen/.config/google-chrome/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/12/11-17:35:12.276 afe Recovering log #3
-2025/12/11-17:35:12.276 afe Reusing old log /home/sheen/.config/google-chrome/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/000003.log 
-2025/12/11-17:35:44.285 b01 Level-0 table #5: started
-2025/12/11-17:35:44.289 b01 Level-0 table #5: 1985 bytes OK
-2025/12/11-17:35:44.293 b01 Delete type=0 #3
-2025/12/11-17:35:44.293 b01 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

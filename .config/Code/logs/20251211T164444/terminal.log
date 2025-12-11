@@ -1,6 +1,0 @@
-2025-12-11 16:44:48.226 [warning] Couldn't attach to process Could not find pty 1 on pty host []
-2025-12-11 16:44:48.227 [warning] Attach to process failed for terminal [{"id":1,"pid":122396,"title":"bash","titleSource":2,"cwd":"","icon":{"id":"terminal","defaults":{"fontCharacter":"\\ea85"}},"hasChildProcesses":false,"shellIntegrationNonce":"1fc571c0-0fc0-4edd-9eca-28923417351d","findRevivedId":true}]
-2025-12-11 16:44:51.268 [info] Latency measurements for local backend
-window<->ptyhost (message port): 5.10ms
-window<->ptyhostservice<->ptyhost: 5.60ms
-ptyhostservice<->ptyhost: 2.22ms []

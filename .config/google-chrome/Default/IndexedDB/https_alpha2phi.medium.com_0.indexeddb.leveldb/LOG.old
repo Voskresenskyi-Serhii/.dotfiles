@@ -1,6 +1,0 @@
-2025/12/11-15:48:16.375 1302d Creating DB /home/sheen/.config/google-chrome/Default/IndexedDB/https_alpha2phi.medium.com_0.indexeddb.leveldb since it was missing.
-2025/12/11-15:48:16.386 1302d Reusing MANIFEST /home/sheen/.config/google-chrome/Default/IndexedDB/https_alpha2phi.medium.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/12/11-15:48:23.479 1302d Level-0 table #5: started
-2025/12/11-15:48:23.483 1302d Level-0 table #5: 7240 bytes OK
-2025/12/11-15:48:23.487 1302d Delete type=0 #3
-2025/12/11-15:48:23.487 1302d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
