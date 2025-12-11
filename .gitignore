@@ -13,10 +13,12 @@ pnpm-lock.yaml
 .AppleDouble
 .LSOverride
 
-.config/google-chrome
+.config/google-chrome/
+.config/google-chrome/*
 google-chrome/
 
 .config/Code/
+.config/Code/*
 Code/
 
 .vscode/
