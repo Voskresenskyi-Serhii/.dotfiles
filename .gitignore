@@ -1,4 +1,8 @@
-.git
+^\.git
+^\.github
+\.swp$
+\.bak$
+
 node_modules/
 **/node_modules/
 npm-debug.log*
