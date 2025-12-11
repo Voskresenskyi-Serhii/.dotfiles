@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Отримати поточну яскравість та максимум
+brightness_file="/sys/class/backlight/*/brightness"
+max_file="/sys/class/backlight/*/max_brightness"
+
+current=$(cat $brightness_file)
+max=$(cat $max_file)
+
+# Відсоток
+percent=$(( 100 * current / max ))
+
+echo "☀ ${percent}%"
