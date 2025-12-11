@@ -1,0 +1,92 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "b7c10195e8611d2e33b621790154fe9eb3e658cb09342192db796f0973dbc6c1",
+    "telemetry.devDeviceId": "1a34530a-bee8-4f31-b11a-8a181160f57e",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/sheen/.config"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/sheen/.config/i3": "__default__profile__",
+            "file:///home/sheen/.config": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/sheen/.config",
+            "backupPath": "/home/sheen/.config/Code/Backups/44f895cfe8faa459664ffdc5dac922f3",
+            "uiState": {
+                "mode": 1,
+                "x": 7,
+                "y": 26,
+                "width": 950,
+                "height": 1047
+            }
+        },
+        "openedWindows": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1a1d21",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1a1d21",
+            "editorBackground": "#1a1d21",
+            "titleBarBackground": "#15181c",
+            "titleBarBorder": "#2a2e34",
+            "activityBarBackground": "#15181c",
+            "activityBarBorder": "#2a2e34",
+            "sideBarBackground": "#15181c",
+            "sideBarBorder": "#2a2e34",
+            "statusBarBackground": "#15181c",
+            "statusBarBorder": "#2a2e34",
+            "statusBarNoFolderBackground": "#68217a"
+        },
+        "layoutInfo": {
+            "sideBarSide": "right",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 202,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 202,
+            "auxiliaryBarWidth": 237,
+            "workspaces": {
+                "8473706a1c022a5b2ef400448c562b2f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "75bfec5597a0f56afee8cd54b9d1ca95": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    },
+    "userDataProfiles": [
+        {
+            "location": "-5d0a920e",
+            "name": "Clean",
+            "useDefaultFlags": {
+                "settings": true,
+                "mcp": true
+            }
+        }
+    ]
+}

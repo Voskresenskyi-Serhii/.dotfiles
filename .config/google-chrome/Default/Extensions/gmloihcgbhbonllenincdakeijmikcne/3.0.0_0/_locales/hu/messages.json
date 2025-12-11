@@ -1,0 +1,29 @@
+{
+   "AppDesc": {
+      "message": "Simple QR Scanner works for both Camera and Image files. No Internet needed."
+   },
+   "AppName": {
+      "message": "QR Scanner"
+   },
+   "Camera": {
+      "message": "Kamera"
+   },
+   "DefaultText": {
+      "message": "Itt jelenik meg a beolvasási eredmény."
+   },
+   "Image": {
+      "message": "Kép"
+   },
+   "PermissionPage_Denied": {
+      "message": "Letiltotta az alkalmazás hozzáférését a felvevő eszközhöz. Nélküle nem működik. A feloldáshoz olvassa el az alábbi képernyőképet."
+   },
+   "PermissionPage_Granted": {
+      "message": "Ön engedélyt adott az alkalmazáshoz. Használhatja az alkalmazást most!"
+   },
+   "PermissionPage_Prompt": {
+      "message": "Szükségünk van az Ön engedélyére, hogy hozzáférjünk a felvevőkészülékekhez. Kattintson az Engedélyezés gombra, amikor a böngésző kéri."
+   },
+   "PermissionPage_UnblockInstruction": {
+      "message": "Kattintson a Blokkolás ikonra a címsor végén, majd válassza az Mindig engedélyezése lehetőséget. Akkor kérjük töltse be újra ezt az oldalt."
+   }
+}

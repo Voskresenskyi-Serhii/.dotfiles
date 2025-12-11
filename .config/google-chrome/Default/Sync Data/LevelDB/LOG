@@ -1,0 +1,24 @@
+2025/12/11-16:44:31.290 b09 Reusing MANIFEST /home/sheen/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2025/12/11-16:44:31.298 b09 Recovering log #8
+2025/12/11-16:44:31.300 b09 Reusing old log /home/sheen/.config/google-chrome/Default/Sync Data/LevelDB/000008.log 
+2025/12/11-17:00:09.711 b09 Level-0 table #12: started
+2025/12/11-17:00:09.724 b09 Level-0 table #12: 110446 bytes OK
+2025/12/11-17:00:09.733 b09 Delete type=0 #8
+2025/12/11-17:47:02.634 b01 Level-0 table #14: started
+2025/12/11-17:47:02.646 b01 Level-0 table #14: 119238 bytes OK
+2025/12/11-17:47:02.650 b01 Delete type=0 #11
+2025/12/11-18:34:46.795 b0b Level-0 table #16: started
+2025/12/11-18:34:46.807 b0b Level-0 table #16: 128299 bytes OK
+2025/12/11-18:34:46.812 b0b Delete type=0 #13
+2025/12/11-18:34:46.812 b0b Compacting 4@0 + 1@1 files
+2025/12/11-18:34:46.820 b0b Generated table #17@0: 73 keys, 12424 bytes
+2025/12/11-18:34:46.820 b0b Compacted 4@0 + 1@1 files => 12424 bytes
+2025/12/11-18:34:46.824 b0b compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/12/11-18:34:46.824 b0b Delete type=2 #16
+2025/12/11-18:34:46.824 b0b Delete type=2 #14
+2025/12/11-18:34:46.824 b0b Delete type=2 #9
+2025/12/11-18:34:46.824 b0b Delete type=2 #7
+2025/12/11-18:34:46.824 b0b Delete type=2 #12
+2025/12/11-19:41:38.545 b01 Level-0 table #19: started
+2025/12/11-19:41:38.561 b01 Level-0 table #19: 89363 bytes OK
+2025/12/11-19:41:38.566 b01 Delete type=0 #15

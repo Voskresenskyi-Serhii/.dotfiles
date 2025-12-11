@@ -1,0 +1,29 @@
+{
+   "AppDesc": {
+      "message": "Simple QR Scanner works for both Camera and Image files. No Internet needed."
+   },
+   "AppName": {
+      "message": "QR Scanner"
+   },
+   "Camera": {
+      "message": "fotoaparát"
+   },
+   "DefaultText": {
+      "message": "Tu sa zobrazí váš výsledok skenovania."
+   },
+   "Image": {
+      "message": "Obrázok"
+   },
+   "PermissionPage_Denied": {
+      "message": "Zablokovali ste aplikácii prístup k záznamovému zariadeniu. Bez nej nemôže fungovať. Odblokovanie nájdete na nasledujúcom snímke obrazovky."
+   },
+   "PermissionPage_Granted": {
+      "message": "Povolili ste aplikáciu. Aplikáciu môžete teraz použiť!"
+   },
+   "PermissionPage_Prompt": {
+      "message": "Potrebujeme vaše povolenie na prístup k záznamovým zariadeniam. Po zobrazení prehľadávača kliknite na položku Povoliť."
+   },
+   "PermissionPage_UnblockInstruction": {
+      "message": "Kliknite na ikonu Blokovať na konci panela s adresou a potom vyberte možnosť Vždy povoliť .... Potom túto stránku znova načítajte."
+   }
+}

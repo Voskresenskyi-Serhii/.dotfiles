@@ -1,0 +1,29 @@
+{
+   "AppDesc": {
+      "message": "Simple QR Scanner works for both Camera and Image files. No Internet needed."
+   },
+   "AppName": {
+      "message": "QR Scanner"
+   },
+   "Camera": {
+      "message": "กล้อง"
+   },
+   "DefaultText": {
+      "message": "ผลการสแกนของคุณจะปรากฏที่นี่"
+   },
+   "Image": {
+      "message": "ภาพ"
+   },
+   "PermissionPage_Denied": {
+      "message": "คุณบล็อกแอปไม่ให้เข้าถึงอุปกรณ์บันทึก มันไม่สามารถทำงานได้หากไม่มีมัน โปรดอ้างอิงภาพหน้าจอด้านล่างเพื่อปลดล็อค"
+   },
+   "PermissionPage_Granted": {
+      "message": "คุณได้รับอนุญาตสำหรับแอป คุณสามารถใช้แอพได้ทันที!"
+   },
+   "PermissionPage_Prompt": {
+      "message": "เราต้องได้รับอนุญาตจากคุณในการเข้าถึงอุปกรณ์บันทึกของคุณ กรุณาคลิกอนุญาตเมื่อเบราว์เซอร์แจ้ง"
+   },
+   "PermissionPage_UnblockInstruction": {
+      "message": "คลิกไอคอนบล็อกที่ท้ายแถบที่อยู่จากนั้นเลือกตัวเลือกอนุญาตเสมอ ... จากนั้นโปรดโหลดหน้านี้ซ้ำ"
+   }
+}

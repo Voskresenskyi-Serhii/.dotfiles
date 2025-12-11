@@ -1,0 +1,10 @@
+2025-12-11 15:53:33.027 [warning] /home/sheen/.ssh/config: ENOENT: no such file or directory, open '/home/sheen/.ssh/config'
+2025-12-11 15:53:33.027 [info] [Activation] Extension version: 0.124.0
+2025-12-11 15:53:33.533 [info] [Authentication] Creating hub for .com
+2025-12-11 15:53:34.118 [info] [Activation] Registering built in git provider.
+2025-12-11 15:53:34.118 [info] [Activation] Looking for git repository
+2025-12-11 15:53:34.118 [info] [Activation] Found 0 repositories during activation
+2025-12-11 15:53:34.118 [info] [Activation] Git repository found, initializing review manager and pr tree view.
+2025-12-11 15:53:34.119 [info] [GitAPI] Registering git provider
+2025-12-11 15:53:34.366 [info] [GitPostCommitCommands] Trying to register post commit commands.
+2025-12-11 15:53:36.892 [info] [Activation] Git initialization state changed: state=initialized

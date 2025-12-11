@@ -1,0 +1,29 @@
+{
+   "AppDesc": {
+      "message": "Simple QR Scanner works for both Camera and Image files. No Internet needed."
+   },
+   "AppName": {
+      "message": "QR Scanner"
+   },
+   "Camera": {
+      "message": "Máy ảnh"
+   },
+   "DefaultText": {
+      "message": "Kết quả quét của bạn sẽ xuất hiện ở đây."
+   },
+   "Image": {
+      "message": "Hình ảnh"
+   },
+   "PermissionPage_Denied": {
+      "message": "Bạn đã chặn ứng dụng truy cập thiết bị ghi âm. Nó không thể làm việc mà không có nó. Vui lòng tham khảo ảnh chụp màn hình dưới đây để bỏ chặn nó."
+   },
+   "PermissionPage_Granted": {
+      "message": "Bạn đã cấp phép cho ứng dụng. Bạn có thể sử dụng ứng dụng ngay bây giờ!"
+   },
+   "PermissionPage_Prompt": {
+      "message": "Chúng tôi cần sự cho phép của bạn để truy cập các thiết bị ghi âm của bạn. Vui lòng nhấp vào Cho phép khi trình duyệt nhắc."
+   },
+   "PermissionPage_UnblockInstruction": {
+      "message": "Nhấp vào biểu tượng Chặn ở cuối thanh Địa chỉ, sau đó chọn tùy chọn Luôn cho phép .... Sau đó, vui lòng tải lại trang này."
+   }
+}

@@ -1,0 +1,29 @@
+{
+   "AppDesc": {
+      "message": "Simple QR Scanner works for both Camera and Image files. No Internet needed."
+   },
+   "AppName": {
+      "message": "QR Scanner"
+   },
+   "Camera": {
+      "message": "相机"
+   },
+   "DefaultText": {
+      "message": "您的扫描结果将显示在这里。"
+   },
+   "Image": {
+      "message": "图片"
+   },
+   "PermissionPage_Denied": {
+      "message": "您已阻止该应用访问记录设备。没有它就无法工作。请参考以下屏幕截图以解除阻止。"
+   },
+   "PermissionPage_Granted": {
+      "message": "您已授予该应用的权限。您可以立即使用该应用程序！"
+   },
+   "PermissionPage_Prompt": {
+      "message": "我们需要您的许可才能访问您的记录设备。当浏览器提示时，请单击“允许”。"
+   },
+   "PermissionPage_UnblockInstruction": {
+      "message": "单击地址栏末尾的“阻止”图标，然后选择“始终允许...”选项。然后，请重新加载此页面。"
+   }
+}

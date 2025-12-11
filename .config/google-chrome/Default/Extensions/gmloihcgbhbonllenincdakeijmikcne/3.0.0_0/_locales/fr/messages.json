@@ -1,0 +1,29 @@
+{
+   "AppDesc": {
+      "message": "Simple QR Scanner works for both Camera and Image files. No Internet needed."
+   },
+   "AppName": {
+      "message": "QR Scanner"
+   },
+   "Camera": {
+      "message": "Caméra"
+   },
+   "DefaultText": {
+      "message": "Le résultat de votre analyse apparaîtra ici."
+   },
+   "Image": {
+      "message": "Image"
+   },
+   "PermissionPage_Denied": {
+      "message": "Vous avez empêché l&#39;application d&#39;accéder à l&#39;appareil d&#39;enregistrement. Cela ne peut pas fonctionner sans cela. Veuillez vous référer à la capture d&#39;écran ci-dessous pour le débloquer."
+   },
+   "PermissionPage_Granted": {
+      "message": "Vous avez accordé l&#39;autorisation pour l&#39;application. Vous pouvez utiliser l&#39;application maintenant!"
+   },
+   "PermissionPage_Prompt": {
+      "message": "Nous avons besoin de votre autorisation pour accéder à vos appareils d&#39;enregistrement. Veuillez cliquer sur Autoriser lorsque le navigateur vous y invite."
+   },
+   "PermissionPage_UnblockInstruction": {
+      "message": "Cliquez sur l&#39;icône Bloquer à la fin de la barre d&#39;adresses, puis choisissez l&#39;option Toujours autoriser ... Alors veuillez recharger cette page."
+   }
+}

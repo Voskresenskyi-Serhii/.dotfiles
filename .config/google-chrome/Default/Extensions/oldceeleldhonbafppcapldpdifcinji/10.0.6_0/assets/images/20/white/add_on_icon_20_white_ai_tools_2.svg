@@ -1,0 +1,9 @@
+<svg width="20" height="20" viewBox="0 0 20 20"
+     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI icon">
+  <g fill="#FFFFFF" transform="translate(5 6)">
+    <!-- 'A' (Arial Bold–style) -->
+    <path d="M0.2 7.8 L2.4 0.2 H4.2 L6.4 7.8 H4.9 L4.4 6.0 H2.2 L1.7 7.8 H0.2 Z M2.5 5.2 H4.0 L3.3 1.8 L2.5 5.2 Z"/>
+    <!-- 'I' -->
+    <rect x="7.0" y="0.2" width="1.6" height="7.6"/>
+  </g>
+</svg>
