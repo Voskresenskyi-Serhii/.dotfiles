@@ -14,11 +14,11 @@ pnpm-lock.yaml
 .LSOverride
 
 .config/google-chrome/
-.config/google-chrome/*
+.config/google-chrome/**
 google-chrome/
 
 .config/Code/
-.config/Code/*
+.config/Code/**
 Code/
 
 .vscode/
