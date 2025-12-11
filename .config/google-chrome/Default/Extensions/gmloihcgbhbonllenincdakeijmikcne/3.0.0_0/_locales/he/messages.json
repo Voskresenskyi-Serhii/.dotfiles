@@ -1,0 +1,29 @@
+{
+   "AppDesc": {
+      "message": "Simple QR Scanner works for both Camera and Image files. No Internet needed."
+   },
+   "AppName": {
+      "message": "QR Scanner"
+   },
+   "Camera": {
+      "message": "מַצלֵמָה"
+   },
+   "DefaultText": {
+      "message": "תוצאת הסריקה שלך תופיע כאן."
+   },
+   "Image": {
+      "message": "תמונה"
+   },
+   "PermissionPage_Denied": {
+      "message": "חסמת את האפליקציה מגישה למכשיר הקלטה. זה לא יכול לעבוד בלעדיו. אנא עיין בתמונת המסך שלהלן כדי לבטל את החסימה."
+   },
+   "PermissionPage_Granted": {
+      "message": "הענקת הרשאה לאפליקציה. אתה יכול להשתמש באפליקציה עכשיו!"
+   },
+   "PermissionPage_Prompt": {
+      "message": "אנו זקוקים לאישורך לגישה למכשירי ההקלטה שלך. אנא לחץ על אפשר כאשר הדפדפן מתבקש."
+   },
+   "PermissionPage_UnblockInstruction": {
+      "message": "לחץ על סמל החסימה בסוף סרגל הכתובות, ואז בחר באפשרות תמיד אפשר .... ואז טען מחדש את הדף הזה."
+   }
+}

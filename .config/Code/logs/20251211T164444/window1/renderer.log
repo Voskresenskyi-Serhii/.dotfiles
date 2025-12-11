@@ -1,0 +1,33 @@
+2025-12-11 16:44:47.138 [info] Started local extension host with pid 3649.
+2025-12-11 16:44:51.838 [info] MCP Registry configured: https://api.mcp.github.com
+2025-12-11 16:44:52.167 [error] [Extension Host] (node:3649) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-12-11 16:44:52.204 [error] [Extension Host] (node:3649) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+2025-12-11 16:44:52.574 [error] [Extension Host] (node:3649) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2025-12-11 16:44:52.617 [error] chatParticipant must be declared in package.json: claude-code
+2025-12-11 16:44:53.570 [info] Settings Sync: Account status changed from uninitialized to available
+2025-12-11 16:44:54.545 [info] [perf] Render performance baseline is 84ms
+2025-12-11 16:44:54.665 [error] Failed to fetch MCP registry providers Server returned 404
+2025-12-11 16:44:56.948 [error] [Extension Host] (node:3649) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+2025-12-11 16:44:58.327 [error] Unknown agent: "copilot-swe-agent"
+2025-12-11 16:45:00.491 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 16:45:00.492 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 16:45:00.492 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 16:45:00.492 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 16:45:00.493 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 16:45:00.493 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 16:45:00.657 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 16:45:04.891 [error] [File Watcher ('parcel')] Unexpected error: inotify_add_watch on '/home/sheen/.config/google-chrome/Default/Extensions/Temp' failed: No such file or directory (EUNKNOWN) (path: /home/sheen/.config)
+2025-12-11 16:45:04.894 [error] [File Watcher (universal)] inotify_add_watch on '/home/sheen/.config/google-chrome/Default/Extensions/Temp' failed: No such file or directory
+2025-12-11 17:01:39.100 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-11 17:19:56.714 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 17:19:56.715 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 17:42:32.666 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 17:42:32.667 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 18:10:29.531 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 18:10:29.532 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 18:39:23.711 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2025-12-11 18:42:37.299 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 18:42:37.299 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 19:37:38.237 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 19:37:39.126 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')

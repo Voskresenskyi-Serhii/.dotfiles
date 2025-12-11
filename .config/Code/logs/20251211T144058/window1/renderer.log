@@ -1,0 +1,38 @@
+2025-12-11 14:40:59.870 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-12-11 14:40:59.998 [info] Started local extension host with pid 48093.
+2025-12-11 14:41:00.042 [info] Started initializing default profile extensions in extensions installation folder. file:///home/sheen/.vscode/extensions
+2025-12-11 14:41:00.186 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/sheen/.vscode/extensions
+2025-12-11 14:41:00.740 [info] MCP Registry configured: https://api.mcp.github.com
+2025-12-11 14:41:00.793 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-12-11 14:41:04.314 [info] [perf] Render performance baseline is 18ms
+2025-12-11 14:43:50.657 [error] [Extension Host] (node:48093) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-12-11 14:47:28.839 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-12-11 14:47:28.938 [info] Started local extension host with pid 59235.
+2025-12-11 14:47:29.543 [info] MCP Registry configured: https://api.mcp.github.com
+2025-12-11 14:47:29.594 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-12-11 14:47:31.571 [info] [perf] Render performance baseline is 25ms
+2025-12-11 14:49:09.643 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-12-11 14:49:09.759 [info] Started local extension host with pid 60962.
+2025-12-11 14:49:10.327 [info] MCP Registry configured: https://api.mcp.github.com
+2025-12-11 14:49:10.447 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-12-11 14:49:12.368 [info] [perf] Render performance baseline is 16ms
+2025-12-11 15:25:07.790 [error] Failed to fetch MCP registry providers Server returned 404
+2025-12-11 15:25:12.460 [error] [Extension Host] (node:60962) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-12-11 15:25:12.461 [error] [Extension Host] (node:60962) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+2025-12-11 15:25:12.806 [error] chatParticipant must be declared in package.json: claude-code
+2025-12-11 15:25:13.446 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 15:25:13.446 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 15:25:13.711 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 15:25:13.711 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 15:25:43.167 [error] Failed to fetch MCP registry providers Server returned 404
+2025-12-11 15:26:00.030 [info] Settings Sync: Updated current session 6046d514e881e899
+2025-12-11 15:26:00.035 [info] Settings Sync: Account status changed from unavailable to available
+2025-12-11 15:26:24.095 [error] [Extension Host] (node:60962) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2025-12-11 15:26:25.062 [error] [Extension Host] (node:60962) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+2025-12-11 15:26:25.623 [error] Unknown agent: "copilot-swe-agent"
+2025-12-11 15:26:25.949 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 15:30:01.819 [warning] SettingsEditor2: Settings not included in settingsLayout.ts: extensions.requestTimeout, github.copilot.chat.agent.terminal.allowList, github.copilot.chat.agent.terminal.denyList, terminal.integrated.developer.devMode, terminal.integrated.developer.ptyHost.latency, terminal.integrated.developer.ptyHost.startupDelay, [php], github.copilot.advanced
+2025-12-11 15:46:30.004 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')
+2025-12-11 15:46:30.004 [error] Error providing chat sessions: Cannot read properties of undefined (reading 'created_at')

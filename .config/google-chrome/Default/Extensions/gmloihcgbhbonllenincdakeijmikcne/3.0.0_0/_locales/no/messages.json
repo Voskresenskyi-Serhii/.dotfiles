@@ -1,0 +1,29 @@
+{
+   "AppDesc": {
+      "message": "Simple QR Scanner works for both Camera and Image files. No Internet needed."
+   },
+   "AppName": {
+      "message": "QR Scanner"
+   },
+   "Camera": {
+      "message": "Kamera"
+   },
+   "DefaultText": {
+      "message": "Skanneresultatet vises her."
+   },
+   "Image": {
+      "message": "Bilde"
+   },
+   "PermissionPage_Denied": {
+      "message": "Du har blokkert appen fra å få tilgang til innspillingsenhet. Det kan ikke fungere uten det. Se skjermbildet nedenfor for å fjerne blokkeringen."
+   },
+   "PermissionPage_Granted": {
+      "message": "Du har gitt tillatelse til appen. Du kan bruke appen nå!"
+   },
+   "PermissionPage_Prompt": {
+      "message": "Vi trenger din tillatelse til å få tilgang til dine innspillingsenheter. Vennligst klikk på Tillat når nettleseren ber."
+   },
+   "PermissionPage_UnblockInstruction": {
+      "message": "Klikk på Blokker-ikonet på slutten av adresselinjen, og velg deretter Tillat alltid ... -alternativet. Last siden på nytt."
+   }
+}

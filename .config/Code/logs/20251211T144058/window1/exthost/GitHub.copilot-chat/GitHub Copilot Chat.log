@@ -1,0 +1,79 @@
+2025-12-11 15:25:12.586 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-12-11 15:25:12.586 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-12-11 15:25:12.586 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-12-11 15:25:12.586 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-12-11 15:25:12.604 [info] Logged in as Voskresenskyi-Serhii
+2025-12-11 15:25:12.607 [info] Using the Electron fetcher.
+2025-12-11 15:25:12.787 [error] Copilot extension not found
+2025-12-11 15:25:12.806 [info] Creating node-pty shim: source=/opt/visual-studio-code/resources/app/node_modules/node-pty/build/Release, dest=/home/sheen/.vscode/extensions/github.copilot-chat-0.35.0/node_modules/@github/copilot/prebuilds/linux-x64
+2025-12-11 15:25:12.806 [info] Creating ripgrep shim: source=/opt/visual-studio-code/resources/app/node_modules/@vscode/ripgrep/bin, dest=/home/sheen/.vscode/extensions/github.copilot-chat-0.35.0/node_modules/@github/copilot/sdk/ripgrep/bin/linux-x64
+2025-12-11 15:25:12.811 [info] Found 1 entries to copy: pty.node
+2025-12-11 15:25:12.811 [info] Found 1 entries to copy: rg
+2025-12-11 15:25:12.961 [info] Got Copilot token for Voskresenskyi-Serhii
+2025-12-11 15:25:12.961 [info] Copilot Chat: 0.35.0, VS Code: 1.107.0
+2025-12-11 15:25:12.967 [info] activationBlocker from 'languageModelAccess' took for 210ms
+2025-12-11 15:25:13.227 [info] copilot token chat_enabled: true, sku: monthly_subscriber_quota
+2025-12-11 15:25:13.227 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-12-11 15:25:13.241 [info] Registering default platform agent...
+2025-12-11 15:25:13.241 [info] [code-referencing] Public code references are enabled.
+2025-12-11 15:25:13.241 [info] activationBlocker from 'conversationFeature' took for 491ms
+2025-12-11 15:25:13.256 [info] GithubAvailableEmbeddingTypesManager: Got embeddings. Primary: metis-1024-I16-Binary. Deprecated: 
+2025-12-11 15:25:13.258 [info] WorkspaceChunkSearchService: using embedding type metis-1024-I16-Binary
+2025-12-11 15:25:13.268 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-12-11 15:25:13.545 [info] Fetched model metadata in 774ms e02c6cba-206d-4da2-be1b-85cb55ce5159
+2025-12-11 15:25:13.640 [info] Latest entry: ccreq:latest.copilotmd
+2025-12-11 15:25:13.641 [info] ccreq:e800d386.copilotmd | markdown
+2025-12-11 15:25:19.028 [info] Refetch model metadata: Succeeded in 380ms c29d3704-2d82-41ea-bc88-47f6b31ec78a (8E32:F7528:191C5B7:1CACBE2:693AC639) using electron-fetch with status 200.
+2025-12-11 15:25:19.815 [info] Refetch model metadata: Succeeded in 787ms 0928bf7b-ce5a-4949-aceb-1da938d6d9a6 (8E6C:119AA8:19E2641:1D6F4AC:693AC63F) using node-fetch with status 200.
+2025-12-11 15:25:20.533 [info] Refetch model metadata: Succeeded in 717ms 42d84337-d539-4892-b7f5-7ba20635077a (8E7A:BA270:4DC2572:5A2F51E:693AC640) using node-http with status 200.
+2025-12-11 15:26:25.645 [info] Successfully activated the GitHub.vscode-pull-request-github extension.
+2025-12-11 15:26:25.646 [info] [githubTitleAndDescriptionProvider] Initializing GitHub PR title and description provider provider.
+2025-12-11 15:26:25.646 [info] Successfully registered GitHub PR title and description provider.
+2025-12-11 15:26:25.646 [info] Successfully registered GitHub PR reviewer comments provider.
+2025-12-11 15:30:11.350 [info] [fetchCompletions] Request 0b3e8dad-7467-4eb1-a8e5-91399a898a39 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 467.9574469998479ms
+2025-12-11 15:30:11.353 [info] [streamChoices] solution 0 returned. finish reason: [stop]
+2025-12-11 15:30:11.660 [info] [fetchCompletions] Request 3dcd55e5-998d-4c1e-8aaf-e805db09685e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 322.5107279997319ms
+2025-12-11 15:30:11.697 [info] [streamChoices] solution 0 returned. finish reason: [stop]
+2025-12-11 15:30:17.394 [info] [fetchCompletions] Request 4a7f761a-526d-419b-8c3d-9d419181df66 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 332.68284799996763ms
+2025-12-11 15:30:17.397 [info] [streamChoices] solution 0 returned. finish reason: [stop]
+2025-12-11 15:30:17.856 [info] [fetchCompletions] Request 361745d4-6512-41b8-a168-6bcd3129b3d5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 186.02891500014812ms
+2025-12-11 15:30:17.859 [info] [streamChoices] solution 0 returned. finish reason: [stop]
+2025-12-11 15:30:19.545 [info] [fetchCompletions] Request e31e8fbe-954d-4a0f-8fcb-016c8ff384cd at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 285.0962129998952ms
+2025-12-11 15:30:19.548 [info] [streamChoices] solution 0 returned. finish reason: [stop]
+2025-12-11 15:32:06.300 [info] message 0 returned. finish reason: [stop]
+2025-12-11 15:32:06.301 [info] request done: requestId: [4e5b1abf-e97c-49ad-a3de-2d21ce830625] model deployment ID: []
+2025-12-11 15:32:06.472 [info] ccreq:2e0ba0a0.copilotmd | success | copilot-nes-oct -> gpt-4.1-mini-2025-04-14 | 562ms | [XtabProvider]
+2025-12-11 15:32:06.475 [info] ccreq:119a29c5.copilotmd | markdown
+2025-12-11 15:32:06.985 [info] message 0 returned. finish reason: [stop]
+2025-12-11 15:32:06.985 [info] request done: requestId: [df7542b3-db26-4ebc-8711-548303913948] model deployment ID: []
+2025-12-11 15:32:06.988 [info] ccreq:750605fc.copilotmd | success | copilot-nes-oct -> gpt-4.1-mini-2025-04-14 | 313ms | [XtabProvider]
+2025-12-11 15:32:07.992 [info] ccreq:507ccd7b.copilotmd | markdown
+2025-12-11 15:32:09.068 [info] ccreq:4bc28ff4.copilotmd | markdown
+2025-12-11 15:32:09.662 [info] message 0 returned. finish reason: [stop]
+2025-12-11 15:32:09.662 [info] request done: requestId: [5a3f8624-9448-498b-a679-86a738c2462c] model deployment ID: []
+2025-12-11 15:32:09.665 [info] ccreq:b776aa28.copilotmd | success | copilot-nes-oct -> gpt-4.1-mini-2025-04-14 | 387ms | [XtabProvider]
+2025-12-11 15:32:10.668 [info] ccreq:9a70cd58.copilotmd | markdown
+2025-12-11 15:33:22.146 [info] message 0 returned. finish reason: [stop]
+2025-12-11 15:33:22.146 [info] request done: requestId: [2e80531a-8b47-49b0-8930-0e08a12cff7a] model deployment ID: []
+2025-12-11 15:33:22.340 [info] ccreq:e73abf29.copilotmd | success | copilot-nes-oct -> gpt-4.1-mini-2025-04-14 | 494ms | [XtabProvider]
+2025-12-11 15:33:22.903 [info] ccreq:b4de33be.copilotmd | markdown
+2025-12-11 15:33:26.329 [warning] [relatedFiles] unknown language toml
+2025-12-11 15:33:26.628 [info] [fetchCompletions] Request ac4dde7f-5b82-4d39-9b18-b6138621f385 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 291.75976400030777ms
+2025-12-11 15:33:26.633 [info] [streamChoices] solution 0 returned. finish reason: [stop]
+2025-12-11 15:33:27.244 [info] [fetchCompletions] Request 6c7bbc43-b0aa-4e0c-8c9a-f1b3774755bc at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 302.0803849999793ms
+2025-12-11 15:33:27.247 [info] [streamChoices] solution 0 returned. finish reason: [stop]
+2025-12-11 15:33:27.750 [info] [fetchCompletions] Request 2adf4b4d-f208-4daa-887c-436d70a9b820 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 192.99447799986228ms
+2025-12-11 15:33:27.815 [info] [streamChoices] solution 0 returned. finish reason: [stop]
+2025-12-11 15:33:28.370 [info] [fetchCompletions] Request d06b7394-ea03-4e20-b89a-390dad0338a0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 549.3129900000058ms
+2025-12-11 15:33:28.374 [info] [streamChoices] solution 0 returned. finish reason: [stop]
+2025-12-11 15:46:28.764 [info] Logged in as Voskresenskyi-Serhii
+2025-12-11 15:46:29.528 [info] Got Copilot token for Voskresenskyi-Serhii
+2025-12-11 15:46:29.528 [info] Copilot Chat: 0.35.0, VS Code: 1.107.0
+2025-12-11 15:46:29.541 [info] copilot token chat_enabled: true, sku: monthly_subscriber_quota
+2025-12-11 15:46:29.541 [info] [code-referencing] Public code references are enabled.
+2025-12-11 15:46:29.779 [info] Fetched model metadata in 240ms 8cb34a30-e5a3-4066-9058-58dc01ca9664
+2025-12-11 15:46:29.995 [info] ccreq:329d5c2c.copilotmd | markdown
+2025-12-11 15:52:21.636 [info] [fetchCompletions] Request 1c3ec91d-2169-4314-8d03-6213adc84029 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 436.286526999902ms
+2025-12-11 15:52:21.710 [info] [streamChoices] solution 0 returned. finish reason: [stop]
+2025-12-11 15:52:22.147 [info] [fetchCompletions] Request 8b855c5b-7afd-4804-a224-1c87faef346a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 368.9116989998147ms
+2025-12-11 15:52:22.150 [info] [streamChoices] solution 0 returned. finish reason: [stop]

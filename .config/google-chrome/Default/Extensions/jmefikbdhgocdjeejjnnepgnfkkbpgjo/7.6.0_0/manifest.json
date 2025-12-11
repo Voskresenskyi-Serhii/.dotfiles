@@ -1,0 +1,34 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icon128.plasmo.3c1ed2d2.png",
+         "16": "icon16.plasmo.6c567d50.png",
+         "32": "icon32.plasmo.76b92899.png",
+         "48": "icon48.plasmo.aced7582.png",
+         "64": "icon64.plasmo.8bb5e6e0.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "author": "Elior Boukhobza (Mallowigi)",
+   "description": "Material DevTools Theme Collection",
+   "devtools_page": "devtools.html",
+   "homepage_url": "https://www.material-theme.com",
+   "icons": {
+      "128": "icon128.plasmo.3c1ed2d2.png",
+      "16": "icon16.plasmo.6c567d50.png",
+      "32": "icon32.plasmo.76b92899.png",
+      "48": "icon48.plasmo.aced7582.png",
+      "64": "icon64.plasmo.8bb5e6e0.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzu06/fVvsPuiPF60QTQ6JVEqKJsR9Fep6PqpEkqraPNql0lp0trPFyCynfUiX8BDM4jZnqGfV3gnUoZROkagqvzj/2dNffvd/Tw1bTWNSUFTbxHovgILvVfMn1z/TFZuurH4ib89yB4MUqY/PALY6Y28Wd/LViBVMvqyZzpiPX05yVPWRZSQoJGhuORR2UVIufJbZMmdLEJHfHzO+d4t1DC/ociDDZNG0XEeZKgfGKuxJFwCRR2y6SBDNZYI8pmajIzesWPub4CKICqJ06fAUy5CMHOKEPIIcslekWECoqM7ewKT7fRxg88OOqi5DRLX8pcte1o/YFOnypTuDNhz1wIDAQAB",
+   "manifest_version": 3,
+   "name": "Material DevTools Theme Collection",
+   "permissions": [ "storage" ],
+   "short_name": "Material DevTools",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "7.6.0",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*/*", "file://*/*" ],
+      "resources": [ "assets/**/*.svg" ]
+   } ]
+}

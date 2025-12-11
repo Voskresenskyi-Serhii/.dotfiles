@@ -1,0 +1,26 @@
+@import "~/.config/rofi/config.rasi"
+window {
+    border:                         0;
+    padding:                        10;
+    width:                          200px;
+    location:                       east;
+}
+
+listview {
+    lines:                           4;
+    columns:                        1;
+}
+
+element {
+    border:  0;
+    padding: 1px ;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}

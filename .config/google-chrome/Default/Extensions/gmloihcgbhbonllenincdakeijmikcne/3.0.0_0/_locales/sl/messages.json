@@ -1,0 +1,29 @@
+{
+   "AppDesc": {
+      "message": "Simple QR Scanner works for both Camera and Image files. No Internet needed."
+   },
+   "AppName": {
+      "message": "QR Scanner"
+   },
+   "Camera": {
+      "message": "Kamera"
+   },
+   "DefaultText": {
+      "message": "Rezultat vašega optičnega branja bo prikazan tukaj."
+   },
+   "Image": {
+      "message": "Slika"
+   },
+   "PermissionPage_Denied": {
+      "message": "Aplikaciji ste blokirali dostop do snemalne naprave. Brez tega ne more delovati. Oglejte si spodnji posnetek zaslona, da ga odblokirate."
+   },
+   "PermissionPage_Granted": {
+      "message": "Odobrili ste dovoljenje za aplikacijo. Aplikacijo lahko uporabite zdaj!"
+   },
+   "PermissionPage_Prompt": {
+      "message": "Za dostop do vaših snemalnih naprav potrebujemo vaše dovoljenje. Prosimo, kliknite Dovoli, ko brskalnik pozove."
+   },
+   "PermissionPage_UnblockInstruction": {
+      "message": "Kliknite ikono Blokiraj na koncu naslovne vrstice in nato izberite možnost Vedno dovoli .... Nato ponovno naložite to stran."
+   }
+}

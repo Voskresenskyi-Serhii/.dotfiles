@@ -1,0 +1,29 @@
+{
+   "AppDesc": {
+      "message": "Simple QR Scanner works for both Camera and Image files. No Internet needed."
+   },
+   "AppName": {
+      "message": "QR Scanner"
+   },
+   "Camera": {
+      "message": "Kamera"
+   },
+   "DefaultText": {
+      "message": "Tarama sonucunuz burada görünecektir."
+   },
+   "Image": {
+      "message": "Resim"
+   },
+   "PermissionPage_Denied": {
+      "message": "Uygulamanın kayıt cihazına erişmesini engellediniz. Onsuz çalışamaz. Blokeyi kaldırmak için lütfen aşağıdaki ekran görüntüsüne bakın."
+   },
+   "PermissionPage_Granted": {
+      "message": "Uygulama için izin verdiniz. Şimdi uygulamayı kullanabilirsiniz!"
+   },
+   "PermissionPage_Prompt": {
+      "message": "Kayıt cihazlarınıza erişmek için izninize ihtiyacımız var. Tarayıcı istediğinde lütfen İzin Ver&#39;i tıklayın."
+   },
+   "PermissionPage_UnblockInstruction": {
+      "message": "Adres çubuğunun sonundaki Engelle simgesini tıklayın, ardından Her zaman izin ver ... seçeneğini belirtin. Sonra lütfen bu sayfayı yeniden yükleyin."
+   }
+}

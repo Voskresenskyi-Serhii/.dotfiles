@@ -1,0 +1,29 @@
+{
+   "AppDesc": {
+      "message": "Simple QR Scanner works for both Camera and Image files. No Internet needed."
+   },
+   "AppName": {
+      "message": "QR Scanner"
+   },
+   "Camera": {
+      "message": "دوربین"
+   },
+   "DefaultText": {
+      "message": "نتیجه اسکن شما در اینجا نشان داده می شود."
+   },
+   "Image": {
+      "message": "تصویر"
+   },
+   "PermissionPage_Denied": {
+      "message": "شما برنامه را از دسترسی به دستگاه ضبط مسدود کرده اید. بدون آن نمی تواند کار کند. لطفاً برای رفع انسداد آن به تصویر زیر مراجعه کنید."
+   },
+   "PermissionPage_Granted": {
+      "message": "شما مجوز برنامه را داده اید. شما هم اکنون می توانید از برنامه استفاده کنید!"
+   },
+   "PermissionPage_Prompt": {
+      "message": "برای دسترسی به دستگاههای ضبط شما به مجوز شما نیاز داریم. لطفاً هنگام جستجوی مرورگر ، اجازه را کلیک کنید."
+   },
+   "PermissionPage_UnblockInstruction": {
+      "message": "روی نماد Block در انتهای نوار آدرس کلیک کنید ، سپس گزینه Always թույլ ... را انتخاب کنید. سپس لطفاً این صفحه را بارگیری مجدد کنید."
+   }
+}
