@@ -7,15 +7,15 @@ import = [
 size = 7.0
 
 [font.bold]
-family = "Cascadia Code NF"
+family = "Hack Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "Cascadia Code NF"
+family = "Hack Nerd Font Mono"
 style = "Italic"
 
 [font.normal]
-family = "Cascadia Code NF"
+family = "Hack Nerd Font Mono"
 style = "Regular"
 
 [scrolling]
