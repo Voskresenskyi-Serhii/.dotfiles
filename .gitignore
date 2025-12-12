@@ -41,3 +41,4 @@ Code/
 *~
 go/
 go/**
+.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
