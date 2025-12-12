@@ -60,5 +60,4 @@ alias ls='ls --color'
 alias vim='nvim'
 
 # ohmyposh
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
-
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/amro.omp.json)"
