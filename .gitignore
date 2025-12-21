@@ -44,3 +44,4 @@ go/**
 .config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
 .config/dconf/user
 .config/Thunar/accels.scm
+.config/autostart/Time Doctor.desktop
