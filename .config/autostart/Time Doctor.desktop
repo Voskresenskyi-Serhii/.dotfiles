@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Version=1.0
-Name=Time Doctor
-Comment=Time Doctor startup script
-Exec=/home/sheen/timedoctor-desktop_3.12.16_linux-x86_64.AppImage --no-sandbox
-StartupNotify=false
-Terminal=false
