@@ -18,7 +18,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
-
+zinit light "docker/compose"
 
 # Add in snippets
 zinit snippet OMZL::git.zsh
@@ -56,8 +56,11 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
-alias ls='ls --color'
+alias ls='lsd -alhtr'
 alias vim='nvim'
 
 # ohmyposh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/amro.omp.json)"
+
+. "$HOME/.local/bin/env"
+source $HOME/.local/bin/env
