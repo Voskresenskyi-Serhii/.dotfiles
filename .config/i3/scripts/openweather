@@ -16,6 +16,7 @@
 #    -k, --api-key KEY       Override API key (not recommended, use config file)
 #    -u, --units UNITS       Units: metric, imperial, kelvin (default: $DEFAULT_UNITS)
 #    -f, --force-refresh     Force refresh (ignore cache)
+#    -i, --ip-location       Detect location automatically from IP address
 #    --setup                 Interactive setup wizard
 #    --show-config           Show current configuration
 
@@ -61,6 +62,7 @@ Options:
     -k, --api-key KEY       Override API key (not recommended, use config file)
     -u, --units UNITS       Units: metric, imperial, kelvin (default: $DEFAULT_UNITS)
     -f, --force-refresh     Force refresh (ignore cache)
+    -i, --ip-location       Detect location automatically from IP address
     --setup                 Interactive setup wizard
     --show-config           Show current configuration
     
@@ -257,9 +259,26 @@ is_cache_valid() {
     [[ $(($(date +%s) - $(stat -c %Y "$CACHE_FILE" 2>/dev/null || echo 0))) -lt $CACHE_DURATION ]]
 }
 
+# Get location coordinates from IP address
+get_location_from_ip() {
+    local loc
+    loc=$(curl -sf --max-time 5 'https://ipinfo.io/loc' 2>/dev/null)
+    if [[ -z "$loc" ]] || [[ ! "$loc" =~ ^-?[0-9]+\.[0-9]+,-?[0-9]+\.[0-9]+$ ]]; then
+        log_error "Failed to get location from IP"
+        return 1
+    fi
+    IP_LAT="${loc%,*}"
+    IP_LON="${loc#*,}"
+}
+
 # Fetch weather data from API
 fetch_weather_data() {
-    local url="https://api.openweathermap.org/data/2.5/weather?id=${OPENWEATHER_CITY_ID}&units=${OPENWEATHER_UNITS}&appid=${OPENWEATHER_API_KEY}"
+    local url
+    if [[ "${USE_IP_LOCATION:-false}" == "true" ]]; then
+        url="https://api.openweathermap.org/data/2.5/weather?lat=${IP_LAT}&lon=${IP_LON}&units=${OPENWEATHER_UNITS}&appid=${OPENWEATHER_API_KEY}"
+    else
+        url="https://api.openweathermap.org/data/2.5/weather?id=${OPENWEATHER_CITY_ID}&units=${OPENWEATHER_UNITS}&appid=${OPENWEATHER_API_KEY}"
+    fi
     
     local response
     if ! response=$(curl -sf "$url" 2>/dev/null); then
@@ -400,6 +419,7 @@ main() {
     local api_key_override=""
     local units_override=""
     local force_refresh="false"
+    local use_ip_location="false"
     
     # Parse command line arguments
     while [[ $# -gt 0 ]]; do
@@ -422,6 +442,10 @@ main() {
                 ;;
             -f|--force-refresh)
                 force_refresh="true"
+                shift
+                ;;
+            -i|--ip-location)
+                use_ip_location="true"
                 shift
                 ;;
             --setup)
@@ -452,10 +476,15 @@ main() {
     [[ -n "$city_id_override" ]] && OPENWEATHER_CITY_ID="$city_id_override"
     [[ -n "$api_key_override" ]] && OPENWEATHER_API_KEY="$api_key_override"
     [[ -n "$units_override" ]] && OPENWEATHER_UNITS="$units_override"
+    USE_IP_LOCATION="$use_ip_location"
     
     # Validate configuration
     validate_api_key
-    validate_city_id
+    if [[ "$USE_IP_LOCATION" == "true" ]]; then
+        get_location_from_ip
+    else
+        validate_city_id
+    fi
     
     # Get and format weather data
     local weather_data

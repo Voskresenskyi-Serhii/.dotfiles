@@ -58,9 +58,25 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='lsd -alhtr'
 alias vim='nvim'
+alias copilot='/usr/local/bin/copilot'
 
 # ohmyposh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/amro.omp.json)"
 
 . "$HOME/.local/bin/env"
 source $HOME/.local/bin/env
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH="$PATH:$HOME/Android/Sdk/platform-tools:$HOME/Android/Sdk/cmdline-tools/latest/bin"
+export ANDROID_HOME=$ANDROID_SDK_ROOT
+
+# Use system JDK (used by Flutter)
+export JAVA_HOME=/usr/lib/jvm/java-25-openjdk
+# Use Temurin8 for sdkmanager if installed
+if [ -d "$HOME/.local/java/temurin8" ]; then
+  export TEMP_JAVA_HOME="$HOME/.local/java/temurin8"
+  export PATH="$TEMP_JAVA_HOME/bin:$PATH"
+fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

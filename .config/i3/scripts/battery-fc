@@ -1,0 +1,122 @@
+#!/usr/bin/env python3
+#
+# Battery indicator for i3blocks with fast charge detection
+#
+
+from subprocess import check_output
+import os
+import re
+
+# ---------- CONFIG ----------
+FAST_CHARGE_W = 25  # поріг fast charge у ватах
+# ----------------------------
+
+config = dict(os.environ)
+
+def get_charge_power_watts():
+    base = "/sys/class/power_supply"
+    for dev in os.listdir(base):
+        if dev.startswith("BAT"):
+            try:
+                with open(f"{base}/{dev}/power_now") as f:
+                    return int(f.read().strip()) / 1_000_000
+            except FileNotFoundError:
+                try:
+                    with open(f"{base}/{dev}/current_now") as c, \
+                         open(f"{base}/{dev}/voltage_now") as v:
+                        return (int(c.read()) * int(v.read())) / 1_000_000_000_000
+                except FileNotFoundError:
+                    pass
+    return None
+
+status = check_output(['acpi'], universal_newlines=True)
+
+# ---------- NO BATTERY ----------
+if not status:
+    color = config.get("color_10", "red")
+    fulltext = "<span color='{}'><span font='FontAwesome'>\uf00d \uf240</span></span>".format(color)
+    percentleft = 100
+
+# ---------- BATTERY FOUND ----------
+else:
+    batteries = status.split("\n")
+    state_batteries = []
+    percentleft_batteries = []
+    timeleft = ""
+
+    for battery in batteries:
+        if battery:
+            state_batteries.append(battery.split(": ")[1].split(", ")[0])
+            parts = battery.split(", ")
+
+            if not timeleft:
+                m = re.match(r"(\d+):(\d+)", parts[-1].strip())
+                if m:
+                    timeleft = " ({})".format(":".join(m.groups()))
+
+            try:
+                p = int(parts[1].rstrip("%\n"))
+                percentleft_batteries.append(p)
+            except ValueError:
+                pass
+
+    state = state_batteries[0]
+    percentleft = int(sum(percentleft_batteries) / len(percentleft_batteries)) if percentleft_batteries else 0
+
+    # ---------- ICONS ----------
+    FA_BATTERY = "<span font='FontAwesome'>\uf240</span>"
+    FA_PLUG = "<span font='FontAwesome'>\uf1e6</span>"
+    FA_LIGHTNING = "<span color='{}'><span font='FontAwesome'>\uf0e7</span></span>".format(
+        config.get("color_charging", "yellow")
+    )
+    FA_FAST = "<span color='#00ffcc'><span font='FontAwesome'>\uf0e7</span></span>"
+    FA_QUESTION = "<span font='FontAwesome'>\uf128</span>"
+
+    # ---------- STATE LOGIC ----------
+    if state == "Discharging":
+        fulltext = FA_BATTERY + " "
+        timeleft = ""
+
+    elif state == "Full":
+        fulltext = FA_PLUG + " "
+        timeleft = ""
+
+    elif state == "Charging":
+        power = get_charge_power_watts()
+        if power and power >= FAST_CHARGE_W:
+            fulltext = FA_FAST + " " + FA_PLUG + " "
+        else:
+            fulltext = FA_LIGHTNING + " " + FA_PLUG + " "
+
+    else:
+        fulltext = FA_QUESTION + " " + FA_BATTERY + " "
+        timeleft = ""
+
+    # ---------- COLOR BY PERCENT ----------
+    def color(percent):
+        if percent < 10:
+            return config.get("color_10", "#FF0000")
+        if percent < 20:
+            return config.get("color_20", "#FF3300")
+        if percent < 30:
+            return config.get("color_30", "#FF6600")
+        if percent < 40:
+            return config.get("color_40", "#FF9900")
+        if percent < 50:
+            return config.get("color_50", "#FFCC00")
+        if percent < 60:
+            return config.get("color_60", "#FFFF00")
+        if percent < 70:
+            return config.get("color_70", "#CCFF33")
+        if percent < 80:
+            return config.get("color_80", "#99FF66")
+        return config.get("color_full", "#FFFFFF")
+
+    fulltext += '<span color="{}">{}%</span>'.format(color(percentleft), percentleft)
+
+# ---------- OUTPUT ----------
+print(fulltext)
+print(fulltext)
+
+if percentleft < 10:
+    exit(33)

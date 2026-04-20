@@ -28,6 +28,9 @@ Code/
 .vscode/
 .idea/
 *.log
+
+# Sensitive configs with secrets
+.config/openweather/config
 .env
 .env.local
 .env.*.local
