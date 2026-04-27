@@ -63,6 +63,7 @@ google-chrome/
 .config/Code/WebStorage/
 .config/Code/Code\ Cache/
 .config/Code/code.lock
+.config/Code/.org.chromium.Chromium.*
 
 .vscode/
 .idea/
