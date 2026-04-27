@@ -21,9 +21,48 @@ pnpm-lock.yaml
 .config/google-chrome/**
 google-chrome/
 
-.config/Code/
-.config/Code/**
-Code/
+# VS Code - only track user-facing settings files, NOT runtime/machine state
+.config/Code/User/globalStorage/
+.config/Code/User/workspaceStorage/
+.config/Code/User/History/
+.config/Code/User/sync/
+.config/Code/User/profiles/
+.config/Code/CachedExtensionVSIXs/
+.config/Code/Cache/
+.config/Code/CachedData/
+.config/Code/CachedConfigurations/
+.config/Code/CachedProfilesData/
+.config/Code/logs/
+.config/Code/blob_storage/
+.config/Code/Backups/
+.config/Code/Cookies
+.config/Code/Cookies-journal
+.config/Code/Crashpad/
+.config/Code/GPUCache/
+.config/Code/DawnGraphiteCache/
+.config/Code/DawnWebGPUCache/
+.config/Code/Dictionaries/
+.config/Code/DIPS
+.config/Code/DIPS-wal
+.config/Code/machineid
+.config/Code/Preferences
+.config/Code/languagepacks.json
+.config/Code/Local\ Storage/
+.config/Code/Network\ Persistent\ State
+.config/Code/Partitions/
+.config/Code/Service\ Worker/
+.config/Code/Session\ Storage/
+.config/Code/Shared\ Dictionary/
+.config/Code/shared_proto_db/
+.config/Code/SharedStorage
+.config/Code/SharedStorage-wal
+.config/Code/TransportSecurity
+.config/Code/Trust\ Tokens
+.config/Code/Trust\ Tokens-journal
+.config/Code/VideoDecodeStats/
+.config/Code/WebStorage/
+.config/Code/Code\ Cache/
+.config/Code/code.lock
 
 .vscode/
 .idea/
