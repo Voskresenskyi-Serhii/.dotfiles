@@ -48,3 +48,5 @@ go/**
 .config/dconf/user
 .config/Thunar/accels.scm
 .config/autostart/Time Doctor.desktop
+.config/pulse/cookie
+
