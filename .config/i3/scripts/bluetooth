@@ -1,0 +1,39 @@
+#!/bin/bash
+# ponytail: shows first connected BT device + battery. Multi-device? loop `bluetoothctl devices Connected`.
+
+mac=$(bluetoothctl devices Connected 2>/dev/null | head -1 | awk '{print $2}')
+
+case "$BLOCK_BUTTON" in
+    1) setsid blueman-manager >/dev/null 2>&1 & ;;
+    2) bluetoothctl show | grep -q "Powered: yes" \
+         && bluetoothctl power off >/dev/null 2>&1 \
+         || bluetoothctl power on  >/dev/null 2>&1 ;;
+    3) [ -n "$mac" ] && bluetoothctl disconnect "$mac" >/dev/null 2>&1 ;;
+esac
+
+# ponytail: re-read after a click so the block doesn't show stale state for one tick
+[ -n "$BLOCK_BUTTON" ] && mac=$(bluetoothctl devices Connected 2>/dev/null | head -1 | awk '{print $2}')
+
+if [ -z "$mac" ]; then
+    echo ""              # nothing connected -> empty block
+    exit 0
+fi
+
+name=$(bluetoothctl info "$mac" 2>/dev/null | grep -m1 'Name:' | cut -d' ' -f2-)
+batt=$(bluetoothctl info "$mac" 2>/dev/null | grep -m1 'Battery Percentage:' | grep -oP '\(\K[0-9]+')
+
+# ponytail: glyphs as \u escapes — literal icon chars get mangled by editors/copy-paste
+bt=$'\uf294'   # nf-fa-bluetooth_b
+
+if [ -n "$batt" ]; then
+    # battery icon by level: empty → full
+    if   [ "$batt" -le 10 ]; then icon=$'\uf244'; color="#ff5555"
+    elif [ "$batt" -le 30 ]; then icon=$'\uf243'; color="#ffb86c"
+    elif [ "$batt" -le 60 ]; then icon=$'\uf242'; color="#b4c0c8"
+    elif [ "$batt" -le 85 ]; then icon=$'\uf241'; color="#b4c0c8"
+    else                          icon=$'\uf240'; color="#b4c0c8"
+    fi
+    echo "<span color='$color'>$bt $name $icon $batt%</span>"
+else
+    echo "$bt $name"
+fi
