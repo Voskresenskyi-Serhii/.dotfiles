@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+mode=$(optimus-manager --status 2>/dev/null | awk '/^Current mode:/{print $NF}')
+
+case "$mode" in
+    nvidia)      echo "🟢 nvidia" ;;
+    integrated)  echo "🔵 integrated" ;;
+    hybrid)      echo "🟡 hybrid" ;;
+    *)           echo "❓ unknown" ;;
+esac

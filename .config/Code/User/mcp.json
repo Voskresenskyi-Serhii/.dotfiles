@@ -86,21 +86,6 @@
 			},
 			"gallery": "https://api.mcp.github.com",
 			"version": "1.0.31"
-		},
-		"oraios/serena": {
-			"type": "stdio",
-			"command": "/home/sheen/.local/bin/uvx",
-			"args": [
-				"--from",
-				"git+https://github.com/oraios/serena",
-				"serena",
-				"start-mcp-server",
-				"serena==latest",
-				"--context",
-				"ide-assistant"
-			],
-			"gallery": "https://api.mcp.github.com",
-			"version": "1.0.0"
 		}
 	}
 }

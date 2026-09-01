@@ -1,10 +1,10 @@
 {
   // === Editor ===
-  "editor.fontFamily": "Cascadia Code NF, Cascadia Code, JetBrains Mono, JetBrainsMono Nerd Font, Siji, siji",
+  "editor.fontFamily": "Maple Mono, Cascadia Code NF, Cascadia Code, JetBrains Mono, JetBrainsMono Nerd Font, Siji, siji",
   "editor.fontLigatures": "'calt', 'ss01'",
-  "editor.codeLensFontFamily": "Cascadia Code NF, Cascadia Code, JetBrains Mono, JetBrainsMono Nerd Font",
+  "editor.codeLensFontFamily": "Maple Mono, Cascadia Code NF, Cascadia Code, JetBrains Mono, JetBrainsMono Nerd Font",
   "editor.fontSize": 14,
-  "editor.fontWeight": "400",
+  "editor.fontWeight": "500",
   "editor.minimap.enabled": false,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
@@ -20,11 +20,9 @@
   "editor.scrollbar.scrollByPage": true,
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": true,
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
-
+  // "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
   // === Terminal ===
-  "terminal.integrated.fontFamily": "Hack Nerd Font Mono, Cascadia Code PL, Cascadia Code NF,  Cascadia Code",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "Maple Mono, Hack Nerd Font Mono, Cascadia Code PL, Cascadia Code NF,  Cascadia Code",
   "terminal.integrated.lineHeight": 1.4,
   "terminal.integrated.letterSpacing": 0.5,
   "terminal.integrated.fontLigatures.featureSettings": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
@@ -37,16 +35,28 @@
   "terminal.integrated.suggest.enabled": true,
   "terminal.integrated.shellIntegration.enabled": true,
   "terminal.integrated.profiles.linux": {
-    "zsh": { "path": "/bin/zsh" },
-    "tmux-shell": { "path": "tmux", "args": ["new-session", "-A", "-s", "vscode:${workspaceFolderBasename}"] },
-    "GitHub Copilot CLI": { "path": "/usr/local/bin/copilot", "icon": "copilot" }
+    "zsh": {
+      "path": "/bin/zsh"
+    },
+    "tmux-shell": {
+      "path": "tmux",
+      "args": [
+        "new-session",
+        "-A",
+        "-s",
+        "vscode:${workspaceFolderBasename}"
+      ]
+    },
+    "GitHub Copilot CLI": {
+      "path": "/usr/local/bin/copilot",
+      "icon": "copilot"
+    }
   },
   "terminal.integrated.env.windows": {},
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.enableVisualBell": false,
+  "terminal.integrated.enableVisualBell": false,
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
-
   // === Files ===
   "files.trimTrailingWhitespace": false,
   "files.trimFinalNewlines": true,
@@ -64,7 +74,6 @@
     "**/build/**": true,
     "**/tmp/**": true
   },
-
   // === Workbench & Window ===
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -79,73 +88,95 @@
   "window.menuBarVisibility": "compact",
   "workbench.iconTheme": "file-icons-colourless",
   "window.newWindowProfile": "Default",
-
   // === Search ===
   "search.followSymlinks": false,
   "search.useIgnoreFiles": true,
-
   // === Git & Source Control ===
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.ignoreRebaseWarning": true,
   "git.openRepositoryInParentFolders": "always",
-
   // === Diff Editor ===
   "diffEditor.renderSideBySide": false,
   "diffEditor.ignoreTrimWhitespace": false,
-
   // === Telemetry ===
   "telemetry.telemetryLevel": "off",
-
   // === Accessibility ===
-  "accessibility.signals.terminalBell": { "sound": "on" },
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
   "accessibility.dimUnfocused.enabled": true,
-
   // === Languages & Formatters ===
-  "[javascript]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
-  "[typescript]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
-  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[json]": { "editor.defaultFormatter": "vscode.json-language-features" },
-  "[jsonc]": { "editor.defaultFormatter": "vscode.json-language-features" },
-  "[css]": { "editor.defaultFormatter": "vscode.css-language-features" },
-  "[html]": { "editor.defaultFormatter": "vscode.html-language-features" },
-  "[vue]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[php]": { "editor.linkedEditing": false },
-  "[markdown]": { "editor.defaultFormatter": "DavidAnson.vscode-markdownlint" },
-
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[twig]": {
+    "editor.defaultFormatter": "mblode.twig-language-2"
+  },
+  "[php]": {
+    "editor.linkedEditing": false
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
   // === JSON & YAML Schemas ===
-  "json.schemas": [ { "$schema": "https://json.schemastore.org/jsconfig" } ],
+  "json.schemas": [
+    {
+      "$schema": "https://json.schemastore.org/jsconfig"
+    }
+  ],
   "json.maxItemsComputed": 15000,
-
   // === Emmet ===
-  "emmet.includeLanguages": { "twig": "html", "tpl": "html", "blade": "html" },
-
-  // === Markdown ===
-  "markdown.preview.fontSize": 14,
-  "markdown.preview.lineHeight": 1.4,
-
+  "emmet.includeLanguages": {
+    "twig": "html",
+    "tpl": "html",
+    "blade": "html"
+  },
   // === Debug & SCM ===
-  "debug.console.fontSize": 14,
-  "scm.inputFontSize": 14,
-
+  "debug.console.fontSize": 12,
+  "scm.inputFontSize": 12,
   // === Miscellaneous ===
   "gulp.autoDetect": "off",
   "scss.validate": false,
   "css.validate": false,
   "less.validate": false,
   "security.workspace.trust.untrustedFiles": "open",
-  "database-client.autoSync": true,
   "containers.containers.label": "Compose Project Name",
   "atlascode.jira.enabled": true,
   "atlascode.bitbucket.enabled": true,
-
   // === Unicode Highlight ===
-  "editor.unicodeHighlight.allowedCharacters": { "е": true, "і": true, "ᐳ": true, "’": true, "️": true, "І": true },
-  "editor.unicodeHighlight.allowedLocales": { "ru": true },
-
+  "editor.unicodeHighlight.allowedCharacters": {
+    "е": true,
+    "і": true,
+    "ᐳ": true,
+    "’": true,
+    "️": true,
+    "І": true
+  },
+  "editor.unicodeHighlight.allowedLocales": {
+    "ru": true
+  },
   // === Remote & Extensions ===
-  "remote.defaultExtensionsIfInstalledLocally": [ "GitHub.copilot", "GitHub.copilot-chat", "GitHub.vscode-pull-request-github" ],
-
+  "remote.defaultExtensionsIfInstalledLocally": [
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "GitHub.vscode-pull-request-github"
+  ],
   // === Copilot & Console Ninja ===
   "github.copilot.enable": {
     "*": true,
@@ -162,58 +193,130 @@
     "json": true,
     "typescript": true,
     "md": true,
-    "html": true
+    "html": true,
+    "twig": true,
+    "css": true
   },
   "console-ninja.featureSet": "Community",
   "github.copilot.chat.agent.autoFix": false,
   "github.copilot.selectedCompletionModel": "",
   "github.copilot.nextEditSuggestions.enabled": true,
-
   // === Editor experimental features ===
   "editor.experimental.preferTreeSitter.ini": true,
   "editor.experimental.preferTreeSitter.regex": true,
-
   // === TypeScript ===
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.tsdk": "node_modules/typescript/lib",
-
   // === Dockercompose language scope ===
-  "[dockercompose]": { "editor.insertSpaces": true, "editor.tabSize": 2, "editor.autoIndent": "advanced", "editor.quickSuggestions": { "other": true, "comments": false, "strings": true }, "editor.defaultFormatter": "esbenp.prettier-vscode" },
-
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   // === Chat / Editor helpers ===
   "chat.editor.wordWrap": "on",
+  "chat.editor.fontFamily": "Maple Mono, Cascadia Code NF, Cascadia Code, JetBrains Mono",
   "chat.mcp.gallery.enabled": true,
-
   // === Commit message generation instructions ===
   "github.copilot.chat.commitMessageGeneration.instructions": [
-    { "text": "Use conventional commit message format." },
-    { "text": "STRICT FORMAT: <type>(<scope>): <summary>. Example: feat(auth.service.ts): add token refresh logic." },
-    { "text": "IMPORTANT: Each changed file MUST have its own separate line in format: <type>(<filename>): <description>." },
-    { "text": "IMPORTANT:Type must be one of: feat, fix, chore, refactor, docs, test." },
-    { "text": "Scope MUST be the exact filename with extension (e.g., auth.service.ts, Header.vue, api.routes.ts)." },
-    { "text": "For multiple files - create multiple lines, one per file. Do NOT combine into single title." },
-    { "text": "Do NOT separete title line with empty lines." },
-    { "text": "Example for 3 files:\nfeat(auth.service.ts): add login method\nfix(api.routes.ts): register auth endpoint\nchore(auth.types.ts): define AuthResponse type" },
-    { "text": "Commit body is OPTIONAL. Add it only if file-level descriptions are insufficient to explain WHY the change was made." },
-    { "text": "If commit body is needed: separate it from file lines with one empty line." },
-    { "text": "Keep commit body concise - max 50-75 characters total." },
-    { "text": "Avoid phrases like 'This commit introduces', 'Added support for', etc." }
+    {
+      "text": "Use conventional commit message format."
+    },
+    {
+      "text": "STRICT FORMAT: <type>(<scope>): <summary>. Example: feat(auth.service.ts): add token refresh logic."
+    },
+    {
+      "text": "IMPORTANT: Each changed file MUST have its own separate line in format: <type>(<filename>): <description>."
+    },
+    {
+      "text": "IMPORTANT:Type must be one of: feat, fix, chore, refactor, docs, test."
+    },
+    {
+      "text": "Scope MUST be the exact filename with extension (e.g., auth.service.ts, Header.vue, api.routes.ts)."
+    },
+    {
+      "text": "For multiple files - create multiple lines, one per file. Do NOT combine into single title."
+    },
+    {
+      "text": "Do NOT separete title line with empty lines."
+    },
+    {
+      "text": "Example for 3 files:\nfeat(auth.service.ts): add login method\nfix(api.routes.ts): register auth endpoint\nchore(auth.types.ts): define AuthResponse type"
+    },
+    {
+      "text": "Commit body is OPTIONAL. Add it only if file-level descriptions are insufficient to explain WHY the change was made."
+    },
+    {
+      "text": "If commit body is needed: separate it from file lines with one empty line."
+    },
+    {
+      "text": "Keep commit body concise - max 50-75 characters total."
+    },
+    {
+      "text": "Avoid phrases like 'This commit introduces', 'Added support for', etc."
+    },
+    {
+      "text": "Do NOT add 'Co-authored-by: Copilot <copilot@github.com>' or any Copilot attribution to commits. Or any other AI tool attribution."
+    }
   ],
-
   // === Auto-approve & tools (review these) ===
-  "chat.tools.terminal.autoApprove": { "npm run build": { "approve": true, "matchCommandLine": true }, "/^npx tsc --noEmit$/": { "approve": true, "matchCommandLine": true } },
-
+  "chat.tools.terminal.autoApprove": {
+    "npm run build": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "/^npx tsc --noEmit$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  },
   // === Sampling / Models ===
-  "chat.mcp.serverSampling": { "Global in Code: shadcnVue": { "allowedModels": ["copilot/gpt-5-mini", "copilot/auto", "copilot/claude-sonnet-4.5"] } },
-
+  "chat.mcp.serverSampling": {
+    "Global in Code: shadcnVue": {
+      "allowedModels": [
+        "copilot/gpt-5-mini",
+        "copilot/auto",
+        "copilot/claude-sonnet-4.5"
+      ]
+    }
+  },
   "chat.instructionsFilesLocations": {
     ".github/instructions": true,
     "/home/user/.aitk/instructions/": true
   },
-  "[twig]": {
-    "editor.defaultFormatter": "mblode.twig-language-2"
-  },
   "php.validate.executablePath": "/usr/bin/php",
   "chat.viewSessions.orientation": "stacked",
-  "jsts-chat-features.skills.enabled": true
+  "jsts-chat-features.skills.enabled": true,
+  "yaml.schemas": {
+    "file:///home/sheen/.vscode/extensions/continue.continue-1.2.22/config-yaml-schema.json": [
+      ".continue/**/*.yaml"
+    ]
+  },
+  "workbench.browser.enableChatTool": "true",
+  "github.copilot.chat.agent.backgroundTodoAgent.enabled": true,
+  "github.copilot.chat.anthropic.cacheBreakpoints.lastTwoMessages": true,
+  "github.copilot.chat.agentDebugLog.fileLogging.enabled": true,
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "chat.editor.fontSize": 12,
+  "chat.fontFamily": "Maple Mono, Cascadia Code NF, Cascadia Code, JetBrains Mono, JetBrainsMono Nerd Font",
+  "claudeCode.preferredLocation": "panel",
+  "yaml.disableSchemaDetection": [
+    "**/.github/workflows/*.yml",
+    "**/.github/workflows/*.yaml",
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml"
+  ],
+  "remote.autoForwardPortsSource": "hybrid",
+  "chat.fontSize": 12,
 }

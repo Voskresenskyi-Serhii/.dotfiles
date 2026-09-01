@@ -19,6 +19,12 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 zinit light "docker/compose"
+zinit ice wait"0" lucid
+zinit light lukechilds/zsh-nvm
+
+# auto nove version
+autoload -U add-zsh-hook
+add-zsh-hook chpwd _zsh_nvm_auto_use
 
 # Add in snippets
 zinit snippet OMZL::git.zsh
@@ -63,6 +69,10 @@ alias copilot='/usr/local/bin/copilot'
 # ohmyposh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/amro.omp.json)"
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 . "$HOME/.local/bin/env"
 source $HOME/.local/bin/env
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
@@ -80,3 +90,4 @@ fi
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export PATH="$HOME/.local/bin:$PATH"

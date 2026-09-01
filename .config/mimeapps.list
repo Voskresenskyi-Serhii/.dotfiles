@@ -1,5 +1,7 @@
 [Default Applications]
 x-scheme-handler/tonsite=org.telegram.desktop.desktop
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 
 [Added Associations]
 x-scheme-handler/tonsite=org.telegram.desktop.desktop;
+text/plain=userapp-code-Z8AKR3.desktop;
