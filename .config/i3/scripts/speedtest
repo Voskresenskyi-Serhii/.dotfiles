@@ -1,5 +1,4 @@
 #!/bin/sh
-
 CACHE="/tmp/i3blocks-speedtest.$USER"
 
 if [ -s "$CACHE" ]; then cat "$CACHE"; else echo "↓? ↑? Mbps"; fi
@@ -8,5 +7,8 @@ if [ -s "$CACHE" ]; then cat "$CACHE"; else echo "↓? ↑? Mbps"; fi
   speedtest -f json --accept-license --accept-gdpr 2>/dev/null |
     jq -er '"↓\(.download.bandwidth*8/1e6|round) ↑\(.upload.bandwidth*8/1e6|round) Mbps"' \
     > "$CACHE.tmp" &&
-    [ -s "$CACHE.tmp" ] && mv "$CACHE.tmp" "$CACHE" || rm -f "$CACHE.tmp"
+    [ -s "$CACHE.tmp" ] &&
+    mv "$CACHE.tmp" "$CACHE" &&
+    pkill -RTMIN+10 i3blocks ||
+    rm -f "$CACHE.tmp"
 ) >/dev/null 2>&1 &

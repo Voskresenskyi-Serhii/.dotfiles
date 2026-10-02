@@ -13,46 +13,33 @@
     "key": "ctrl+shift+s",
     "command": "editor.action.codeAction",
     "args": {
-      "kind": "source.fixAll.tslint",
+      "kind": "source.fixAll",
       "apply": "first"
-    }
-  },
-  {
-    "key": "ctrl+alt+s",
-    "command": "eslint.executeAutofix"
+    },
+    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+d",
     "command": "editor.action.copyLinesDownAction",
     "when": "editorTextFocus"
   },
-      {
-        "key": "alt+shift+f",
-        "command": "stylelint.executeAutofix",
-        "when": "editorTextFocus && editorLangId == 'css'"
-      },
-      {
-        "key": "alt+shift+f",
-        "command": "stylelint.executeAutofix",
-        "when": "editorTextFocus && editorLangId == 'scss'"
-      },
-      {
-        "key": "alt+shift+f",
-        "command": "stylelint.executeAutofix",
-        "when": "editorTextFocus && editorLangId == 'less'"
-      },
-      {
-        "key": "ctrl+k ctrl+space",
-        "command": "workbench.action.toggleAuxiliaryBar"
-      },
-      {
-        "key": "ctrl+shift+d",
-        "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
-      },
-      {
-        "key": "ctrl+d",
-        "command": "-editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
-      }
+  {
+    "key": "ctrl+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+shift+f",
+    "command": "stylelint.executeAutofix",
+    "when": "editorTextFocus && editorLangId =~ /^(css|scss|less)$/"
+  },
+  {
+    "key": "ctrl+k ctrl+space",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  }
 ]

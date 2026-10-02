@@ -1,8 +1,8 @@
 {
   // === Editor ===
-  "editor.fontFamily": "Maple Mono, Cascadia Code NF, Cascadia Code, JetBrains Mono, JetBrainsMono Nerd Font, Siji, siji",
+  "editor.fontFamily": "Maple Mono, Cascadia Code NF, Cascadia Code, JetBrainsMono Nerd Font, JetBrains Mono, Siji, siji",
   "editor.fontLigatures": "'calt', 'ss01'",
-  "editor.codeLensFontFamily": "Maple Mono, Cascadia Code NF, Cascadia Code, JetBrains Mono, JetBrainsMono Nerd Font",
+  "editor.codeLensFontFamily": "Maple Mono, Cascadia Code NF, Cascadia Code, JetBrainsMono Nerd Font, JetBrains Mono",
   "editor.fontSize": 14,
   "editor.fontWeight": "500",
   "editor.minimap.enabled": false,
@@ -12,7 +12,7 @@
   "editor.glyphMargin": true,
   "editor.suggest.preview": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.semanticHighlighting.enabled": false,
+  "editor.semanticHighlighting.enabled": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairs": "active",
@@ -20,9 +20,8 @@
   "editor.scrollbar.scrollByPage": true,
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": true,
-  // "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
   // === Terminal ===
-  "terminal.integrated.fontFamily": "Maple Mono, Hack Nerd Font Mono, Cascadia Code PL, Cascadia Code NF,  Cascadia Code",
+  "terminal.integrated.fontFamily": "Maple Mono, Hack Nerd Font Mono, Cascadia Code PL, Cascadia Code NF, Cascadia Code",
   "terminal.integrated.lineHeight": 1.4,
   "terminal.integrated.letterSpacing": 0.5,
   "terminal.integrated.fontLigatures.featureSettings": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
@@ -38,32 +37,23 @@
     "zsh": {
       "path": "/bin/zsh"
     },
-    "tmux-shell": {
-      "path": "tmux",
-      "args": [
-        "new-session",
-        "-A",
-        "-s",
-        "vscode:${workspaceFolderBasename}"
-      ]
-    },
     "GitHub Copilot CLI": {
       "path": "/usr/local/bin/copilot",
       "icon": "copilot"
     }
   },
-  "terminal.integrated.env.windows": {},
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.enableVisualBell": false,
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   // === Files ===
-  "files.trimTrailingWhitespace": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.associations": {
     "*.html": "twig",
     "*.vue": "vue",
-    "*.yml": "dockercompose",
+    "docker-compose*.yml": "dockercompose",
+    "compose*.yml": "dockercompose",
     "*.tpl": "html",
     "*.twig": "twig"
   },
@@ -77,8 +67,6 @@
   // === Workbench & Window ===
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.editor.showTabs": "multiple",
   "workbench.editor.wrapTabs": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.pinnedTabsOnSeparateRow": true,
@@ -86,7 +74,6 @@
   "workbench.sideBar.location": "right",
   "window.customTitleBarVisibility": "auto",
   "window.menuBarVisibility": "compact",
-  "workbench.iconTheme": "file-icons-colourless",
   "window.newWindowProfile": "Default",
   // === Search ===
   "search.followSymlinks": false,
@@ -98,7 +85,7 @@
   "git.openRepositoryInParentFolders": "always",
   // === Diff Editor ===
   "diffEditor.renderSideBySide": false,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   // === Telemetry ===
   "telemetry.telemetryLevel": "off",
   // === Accessibility ===
@@ -132,14 +119,10 @@
     "editor.linkedEditing": false
   },
   "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "files.trimTrailingWhitespace": false
   },
   // === JSON & YAML Schemas ===
-  "json.schemas": [
-    {
-      "$schema": "https://json.schemastore.org/jsconfig"
-    }
-  ],
   "json.maxItemsComputed": 15000,
   // === Emmet ===
   "emmet.includeLanguages": {
@@ -155,21 +138,23 @@
   "scss.validate": false,
   "css.validate": false,
   "less.validate": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "containers.containers.label": "Compose Project Name",
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "less",
+    "vue"
+  ],
+  "security.workspace.trust.untrustedFiles": "newWindow",
   "atlascode.jira.enabled": true,
   "atlascode.bitbucket.enabled": true,
   // === Unicode Highlight ===
   "editor.unicodeHighlight.allowedCharacters": {
-    "е": true,
-    "і": true,
     "ᐳ": true,
     "’": true,
-    "️": true,
-    "І": true
+    "️": true
   },
   "editor.unicodeHighlight.allowedLocales": {
-    "ru": true
+    "uk": true
   },
   // === Remote & Extensions ===
   "remote.defaultExtensionsIfInstalledLocally": [
@@ -182,22 +167,8 @@
     "*": true,
     "plaintext": false,
     "markdown": false,
-    "scminput": false,
-    "php": true,
-    "vue": true,
-    "ts": true,
-    "javascript": true,
-    "sh": true,
-    "bash": true,
-    "js": true,
-    "json": true,
-    "typescript": true,
-    "md": true,
-    "html": true,
-    "twig": true,
-    "css": true
+    "scminput": false
   },
-  "console-ninja.featureSet": "Community",
   "github.copilot.chat.agent.autoFix": false,
   "github.copilot.selectedCompletionModel": "",
   "github.copilot.nextEditSuggestions.enabled": true,
@@ -217,11 +188,11 @@
       "comments": false,
       "strings": true
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   // === Chat / Editor helpers ===
   "chat.editor.wordWrap": "on",
-  "chat.editor.fontFamily": "Maple Mono, Cascadia Code NF, Cascadia Code, JetBrains Mono",
+  "chat.editor.fontFamily": "Maple Mono, Cascadia Code NF, Cascadia Code, JetBrainsMono Nerd Font, JetBrains Mono",
   "chat.mcp.gallery.enabled": true,
   // === Commit message generation instructions ===
   "github.copilot.chat.commitMessageGeneration.instructions": [
@@ -276,38 +247,17 @@
       "matchCommandLine": true
     }
   },
-  // === Sampling / Models ===
-  "chat.mcp.serverSampling": {
-    "Global in Code: shadcnVue": {
-      "allowedModels": [
-        "copilot/gpt-5-mini",
-        "copilot/auto",
-        "copilot/claude-sonnet-4.5"
-      ]
-    }
-  },
-  "chat.instructionsFilesLocations": {
-    ".github/instructions": true,
-    "/home/user/.aitk/instructions/": true
-  },
   "php.validate.executablePath": "/usr/bin/php",
+  "php.suggest.basic": false,
   "chat.viewSessions.orientation": "stacked",
   "jsts-chat-features.skills.enabled": true,
-  "yaml.schemas": {
-    "file:///home/sheen/.vscode/extensions/continue.continue-1.2.22/config-yaml-schema.json": [
-      ".continue/**/*.yaml"
-    ]
-  },
-  "workbench.browser.enableChatTool": "true",
   "github.copilot.chat.agent.backgroundTodoAgent.enabled": true,
-  "github.copilot.chat.anthropic.cacheBreakpoints.lastTwoMessages": true,
-  "github.copilot.chat.agentDebugLog.fileLogging.enabled": true,
   "workbench.colorTheme": "Gruvbox Dark Hard",
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
   "chat.editor.fontSize": 12,
-  "chat.fontFamily": "Maple Mono, Cascadia Code NF, Cascadia Code, JetBrains Mono, JetBrainsMono Nerd Font",
+  "chat.fontFamily": "Maple Mono, Cascadia Code NF, Cascadia Code, JetBrainsMono Nerd Font, JetBrains Mono",
   "claudeCode.preferredLocation": "panel",
   "yaml.disableSchemaDetection": [
     "**/.github/workflows/*.yml",
@@ -319,4 +269,14 @@
   ],
   "remote.autoForwardPortsSource": "hybrid",
   "chat.fontSize": 12,
+  "ZedScripts.searchDirectories": [
+    "/home/sheen/.steam/steam/steamapps/common/ProjectZomboid/projectzomboid/media/"
+  ],
+  "claudeCode.hideOnboarding": true,
+  "claudeCode.focusView": true,
+  "chat.agentHost.allowSignedOutWhenUsable": true,
+  "github.copilot.chat.copilotDebugCommand.enabled": false,
+  "workbench.experimental.modernUIEditorTabStyle": "pill",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.editorActionsLocation": "titleBar",
 }
